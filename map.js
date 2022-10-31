@@ -6,3 +6,6 @@ const map = new mapboxgl.Map({
     zoom: 11.42,
     projection: "globe",
 });
+map.on("style.load", () => {
+    map.setFog({});
+});
